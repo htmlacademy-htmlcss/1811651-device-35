@@ -151,6 +151,25 @@ body {
   line-height: 19px;
 }
 
+.pagination {
+  background-color: #f0f0f0;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.pagination-disabled {
+  color: #444;
+  opacity: 0.3;
+}
+
+
   /*Catalog-categories-index*/
 .catalog-categories-link {
   font-family: "raleway", sans-serif;
