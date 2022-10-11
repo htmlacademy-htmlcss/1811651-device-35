@@ -164,3 +164,16 @@ body {
 .contacts-address-phone {
   color: #444;
 }
+
+  /*Subscribe*/
+.subscribe {
+  background-color: #f0f0f0;
+}
+
+.subscribe-title {
+  font-family: "raleway" sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+}
