@@ -80,23 +80,16 @@ body {
   text-decoration: none;
 }
 
-.catalog-toggle,
-.menu-link {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  color:#000;
+.menu-item a {
   text-decoration: none;
-  letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
-/*Main*/
+/*Main-index*/
 .main-index {
   color: inherit;
   background-color: inherit;
 }
-  /*Promo*/
+  /*Promo-index*/
 .property-values {
   font-size: 36px;
   color: #000;
@@ -107,7 +100,20 @@ body {
   color: #444;
 }
 
-  /*Catalog-categories*/
+/*Breadcrumbs-catalog*/
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+/*Catalog-products*/
+.catalog-container{
+  background-color: #f0f0f0;
+}
+
+  /*Catalog-categories-index*/
 .catalog-categories-link {
   font-family: "raleway", sans-serif;
   font-weight: 800;
@@ -117,7 +123,7 @@ body {
   text-decoration: none;
 }
 
-  /*Benefits*/
+  /*Benefits-index*/
  .benefits {
   background-color: #f0f0f0;
 
@@ -129,20 +135,20 @@ body {
 
 
 
-  /*delivery*/
+  /*delivery-index*/
 .delivery-button {
   font-size: 20px;
   line-height: 23px;
 }
 
-  /*about*/
+  /*about-index*/
 .delivery-company-item {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.36px;
 }
 
-  /*Contacts*/
+  /*Contacts-index*/
 .contacts-subtitle {
   color: #444;
 }
@@ -156,7 +162,7 @@ body {
   color: #444;
 }
 
-  /*Subscribe*/
+  /*Subscribe-index*/
 .subscribe {
   background-color: #f0f0f0;
 }
