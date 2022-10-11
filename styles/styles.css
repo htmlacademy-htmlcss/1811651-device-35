@@ -139,3 +139,28 @@ body {
   color: #000;
   letter-spacing: 0.36px;
 }
+
+  /*Contacts*/
+.contacts-title {
+  font-family: "raleway" sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+}
+
+.contacts-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #444;
+}
+
+.contacts-address {
+  font-style: normal;
+  color: #444;
+}
+
+.contacts-address-phone {
+  color: #444;
+}
