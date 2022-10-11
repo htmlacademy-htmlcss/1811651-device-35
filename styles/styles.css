@@ -59,7 +59,7 @@ body {
   color: inherit;
   background-color: inherit;
 }
-
+  /*Promo*/
 .promo-title {
   font-family: "raleway", sans-serif;
   font-weight: 800;
@@ -90,4 +90,14 @@ body {
 .property {
   font-size: 16px;
   color: #444;
+}
+
+/*Catalog-categories*/
+.catalog-categories-link {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000;
+  letter-spacing: 0.36px;
+  text-decoration: none;
 }
