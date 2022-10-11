@@ -177,3 +177,32 @@ body {
   line-height: 50px;
   color: #000;
 }
+
+/*Footer*/
+.page-footer {
+  background-color: #444;
+}
+
+.footer-contacts-address {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #fff;
+}
+
+.footer-menu-link a {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-contacts-address-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
