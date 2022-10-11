@@ -31,6 +31,43 @@ body {
   color: #444;
 }
 
+/*Универсальные классы*/
+.title-1 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color:#000
+}
+.title-2 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000;
+}
+.title-3 {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+.button {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
 /*Header*/
 .page-header {
   background-color: #FFE17F;
@@ -60,26 +97,6 @@ body {
   background-color: inherit;
 }
   /*Promo*/
-.promo-title {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000;
-}
-
-
-.button {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  color: #000;
-  text-align: center;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .property-values {
   font-size: 36px;
   color: #000;
@@ -110,13 +127,7 @@ body {
   color: #FFE17F;
 }
 
-.benefits-content-title {
-  font-family: "raleway" sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000;
-}
+
 
   /*delivery*/
 .delivery-button {
@@ -125,34 +136,14 @@ body {
 }
 
   /*about*/
-.about-title {
-  font-family: "raleway" sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000;
-}
-
 .delivery-company-item {
-  font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
-  color: #000;
   letter-spacing: 0.36px;
 }
 
   /*Contacts*/
-.contacts-title {
-  font-family: "raleway" sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000;
-}
-
 .contacts-subtitle {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 30px;
   color: #444;
 }
 
@@ -170,14 +161,6 @@ body {
   background-color: #f0f0f0;
 }
 
-.subscribe-title {
-  font-family: "raleway" sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000;
-}
-
 /*Footer*/
 .page-footer {
   background-color: #444;
@@ -190,14 +173,9 @@ body {
   color: #fff;
 }
 
-.footer-menu-link a {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
+.footer-menu-link {
   color: #fff;
-  text-align: center;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  text-align:left;
   text-decoration: none;
 }
 
