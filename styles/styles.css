@@ -68,15 +68,13 @@ body {
   color: #000;
 }
 
-.button {
-  text-align: center;
-}
 
-.button, .promo-more {
+.button {
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   color: #000;
+  text-align: center;
   letter-spacing: 4px;
   text-transform: uppercase;
   text-decoration: none;
@@ -92,7 +90,7 @@ body {
   color: #444;
 }
 
-/*Catalog-categories*/
+  /*Catalog-categories*/
 .catalog-categories-link {
   font-family: "raleway", sans-serif;
   font-weight: 800;
@@ -101,3 +99,24 @@ body {
   letter-spacing: 0.36px;
   text-decoration: none;
 }
+
+/*Benefits*/
+.benefits {
+  background-color: #f0f0f0;
+  width: 1440px;
+  height: 289px;
+}
+
+ .button-benefits-current {
+  color: #FFE17F;
+}
+
+.benefits-content-title {
+  font-family: "raleway" sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+}
+
+  /*delivery*/
