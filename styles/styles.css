@@ -100,7 +100,7 @@ body {
   text-decoration: none;
 }
 
-/*Benefits*/
+  /*Benefits*/
  .benefits {
   background-color: #f0f0f0;
 
@@ -122,4 +122,20 @@ body {
 .delivery-button {
   font-size: 20px;
   line-height: 23px;
+}
+
+  /*about*/
+.about-title {
+  font-family: "raleway" sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+}
+
+.delivery-company-item {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+  letter-spacing: 0.36px;
 }
