@@ -113,6 +113,17 @@ body {
   background-color: #f0f0f0;
 }
 
+.catalog-form-title{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-filter-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
   /*Catalog-categories-index*/
 .catalog-categories-link {
   font-family: "raleway", sans-serif;
