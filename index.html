@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
@@ -33,17 +34,17 @@
           </li>
         </ul> <!--/navigation-userlist-->
 
-        <button class="catalog-toggle" type="button" value="Каталог товаров" name="catalog">Каталог товаров</button>
+        <button class="catalog-toggle title-2" type="button" value="Каталог товаров" name="catalog">Каталог товаров</button>
 
         <ul class="menu">
           <li class="menu-item">
-            <a href="#" class="menu-link">Доставка</a>
+            <a href="#" class="menu-link title-2">Доставка</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">Гарантия</a>
+            <a href="#" class="menu-link title-2">Гарантия</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">Контакты</a>
+            <a href="#" class="menu-link title-2">Контакты</a>
           </li>
         </ul> <!--/menu-->
       </nav>
@@ -55,15 +56,15 @@
         <div class="promo-slider-items">
           <div class="promo-slider-item">
             <img class="promo-image" src="images/slider-1-quadrocopter.png" width="560" height="560" alt="Квадрокоптер">
-            <h2 class="promo-title">Порхает как бабочка, жалит как пчела!</h2>
+            <h2 class="promo-title title-1">Порхает как бабочка, жалит как пчела!</h2>
             <p class="promo-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="button promo-more" href="#">Подробнее</a>
-            <table>
-              <tr>
+            <table class="properties-table">
+              <tr class="property-values">
                 <td>800 м</td>
                 <td>50 м</td>
               </tr>
-              <tr>
+              <tr class="property">
                 <td>Дальность полета</td>
                 <td>Радиус поражения</td>
               </tr>
@@ -71,30 +72,30 @@
           </div>
           <div class="promo-slider-item">
             <img class="promo-image" src="images/slider-2-fitness-bracelet.png" width="560" height="560" alt="Фитнес-браслет">
-            <h2 class="promo-title">Худеем правильно!</h2>
+            <h2 class="promo-title title-1">Худеем правильно!</h2>
             <p class="promo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="promo-more" href="#">Подробнее</a>
-            <table>
-              <tr>
+            <a class="button promo-more" href="#">Подробнее</a>
+            <table class="properties-table">
+              <tr class="property-values">
                 <td>48 часов</td>
               </tr>
-              <tr>
+              <tr class="property">
                 <td>Без подзарядки</td>
               </tr>
             </table>
           </div>
           <div class="promo-slider-item">
             <img class="promo-image" src="images/slider-3-selfi-stick.png" width="560" height="560" alt="Селфи-палка">
-            <h2 class="promo-title">Делай селфи, как Бен Стиллер!</h2>
+            <h2 class="promo-title title-1">Делай селфи, как Бен Стиллер!</h2>
             <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 кг.</p>
-            <a class="promo-more" href="#">Подробнее</a>
-            <table>
-              <tr>
+            <a class="button promo-more" href="#">Подробнее</a>
+            <table class="properties-table">
+              <tr class="property-values">
                 <td>8,5 м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
               </tr>
-              <tr>
+              <tr class="property">
                 <td>Длина палки</td>
                 <td>Вес палки</td>
                 <td>Материал</td>
@@ -169,27 +170,27 @@
 
         <ol class="benefits-title-list">
           <li class="benefits-title-item">
-            <button class="button button-benefits-title button-benefits-current" type="button">Доставка</button>
+            <button class="button button-benefits-current" type="button">Доставка</button>
           </li>
           <li class="benefits-title-item">
-            <button class="button button-benefits-title button-benefits-current" type="button">Гарантия</button>
+            <button class="button button-benefits-title button-benefits" type="button">Гарантия</button>
           </li>
           <li class="benefits-title-item">
-            <button class="button button-benefits-title button-benefits-current" type="button">Кредит</button>
+            <button class="button button-benefits-title button-benefits" type="button">Кредит</button>
           </li>
         </ol>
 
         <ol class="benefits-content-list">
           <li class="benefits-content-item">
-            <h3 class="benefits-content-title">Доставка</h3>
+            <h3 class="benefits-content-title title-1">Доставка</h3>
             <p class="benefits-content-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li class="benefits-content-item">
-            <h3 class="benefits-content-title">Гарантия</h3>
+            <h3 class="benefits-content-title title-1">Гарантия</h3>
             <p class="benefits-content-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
           <li class="benefits-content-item">
-            <h3 class="benefits-content-title">Кредит</h3>
+            <h3 class="benefits-content-title title-1">Кредит</h3>
             <p class="benefits-content-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
         </ol>
@@ -203,37 +204,39 @@
         </button>
       </section> <!--/delivery-->
 
-      <section class="about">
-        <h2 class="about-title">О нас</h2>
-        <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about-text">Мы можем доставить ваш товар в самые отдаленные уголки России транспортными компаниями:</p>
-        <ul class="delivery-company-list">
-          <li class="delivery-company-item">Меловые линии</li>
-          <li class="delivery-company-item">СДИК</li>
-          <li class="delivery-company-item">ТоксБерри</li>
-        </ul>
-        <a class="button about-more" href="#">Подробнее о нас</a>
+      <div class="about-contacts-columns">
+        <section class="about">
+          <h2 class="about-title title-1">О нас</h2>
+          <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about-text">Мы можем доставить ваш товар в самые отдаленные уголки России транспортными компаниями:</p>
+          <ul class="delivery-company-list">
+            <li class="delivery-company-item title-3">Меловые линии</li>
+            <li class="delivery-company-item title-3">СДИК</li>
+            <li class="delivery-company-item title-3">ТоксБерри</li>
+          </ul>
+          <a class="button about-more" href="#">Подробнее о нас</a>
 
-      </section> <!--/about-->
+        </section> <!--/about-->
 
-      <section class="contacts">
-        <h2 class="contacts-title">Контакты</h2>
-        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-        <h3 class="contacts-subtitle">Интеренет-магазин "Девайс"</h3>
-        <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a class="contacts-address-phone"  href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-        <h3 class="contacts-subtitle">Время работы</h3>
-        <ul class="contacts-schedule">
-          <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
-          <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
-        </ul>
-        <a class="button button-feedback" href="#">Напишите нам</a>
-      </section> <!--/contacts-->
+        <section class="contacts">
+          <h2 class="contacts-title title-1">Контакты</h2>
+          <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+          <h3 class="contacts-subtitle title-3">Интеренет-магазин "Девайс"</h3>
+          <address class="contacts-address">
+            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a class="contacts-address-phone"  href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+          <h3 class="contacts-subtitle">Время работы</h3>
+          <ul class="contacts-schedule">
+            <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
+            <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
+          </ul>
+          <a class="button button-feedback" href="#">Напишите нам</a>
+        </section> <!--/contacts-->
+      </div>
 
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <h2 class="subscribe-title title-1">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
@@ -256,14 +259,14 @@
 
       <div class="footer-links">
         <ul class="footer-menu-list">
-          <li class="footer-menu-link">
-            <a href="#">Доставка</a>
+          <li class="footer-menu-item">
+            <a class="button footer-menu-link" href="#">Доставка</a>
           </li>
-          <li class="footer-menu-link">
-            <a href="#">Гарантия</a>
+          <li class="footer-menu-item">
+            <a class="button footer-menu-link" href="#">Гарантия</a>
           </li>
-          <li class="footer-menu-link">
-            <a href="#">Контакты</a>
+          <li class="footer-menu-item">
+            <a class="button footer-menu-link" href="#">Контакты</a>
           </li>
         </ul> <!--/footer-meni-list-->
         <ul class="footer-social-list">
