@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #fff;
+  color: #444;
+}
+
+/*Универсальные классы*/
+.title-1 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color:#000
+}
+.title-2 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000;
+}
+.title-3 {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+.button {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/*Header*/
+.page-header {
+  background-color: #FFE17F;
+  color: #000;
+}
+
+.navigation-link {
+  color:#000;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+}
+
+/*Main-index*/
+.main-index {
+  color: inherit;
+  background-color: inherit;
+}
+  /*Promo-index*/
+.property-values {
+  font-size: 36px;
+  color: #000;
+}
+
+.property {
+  font-size: 16px;
+  color: #444;
+}
+
+/*Breadcrumbs-catalog*/
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+/*Catalog-products*/
+.catalog-container{
+  background-color: #f0f0f0;
+}
+
+.catalog-form-title{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-filter-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
+.control {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+/*Product-cards-catalog*/
+.products-cards-container{
+  background-color: #fff;
+}
+
+.product-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
+.product-card-price {
+  line-height: 21px;
+  text-align: right;
+}
+
+.button-load-more {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pagination {
+  background-color: #f0f0f0;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.pagination-disabled {
+  color: #444;
+  opacity: 0.3;
+}
+
+
+  /*Catalog-categories-index*/
+.catalog-categories-link {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000;
+  letter-spacing: 0.36px;
+  text-decoration: none;
+}
+
+  /*Benefits-index*/
+ .benefits {
+  background-color: #f0f0f0;
+
+}
+
+ .button-benefits-current {
+  color: #FFE17F;
+}
+
+
+
+  /*delivery-index*/
+.delivery-button {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+  /*about-index*/
+.delivery-company-item {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
+  /*Contacts-index*/
+.contacts-subtitle {
+  color: #444;
+}
+
+.contacts-address {
+  font-style: normal;
+  color: #444;
+}
+
+.contacts-address-phone {
+  color: #444;
+}
+
+  /*Subscribe-index*/
+.subscribe {
+  background-color: #f0f0f0;
+}
+
+/*Footer*/
+.page-footer {
+  background-color: #444;
+}
+
+.footer-contacts-address {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #fff;
+}
+
+.footer-menu-link {
+  color: #fff;
+  text-align:left;
+  text-decoration: none;
+}
+
+.footer-contacts-address-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
