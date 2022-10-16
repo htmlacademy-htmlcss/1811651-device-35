@@ -213,12 +213,10 @@ body {
 
   /*Catalog-categories-index*/
 .catalog-categories-link {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
   line-height: 24px;
-  color: #000;
-  letter-spacing: 0.36px;
+  letter-spacing: -0.36px;
   text-decoration: none;
+  text-transform: none;
 }
 
   /*Benefits-index*/
