@@ -305,17 +305,33 @@ body {
   background-color: #444;
 }
 
+.footer-container {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .footer-contacts-address {
+  width: 239px;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
   color: #fff;
 }
 
+.footer-links {
+  width: 444px;
+}
+
 .footer-menu-link {
   color: #fff;
   text-align:left;
   text-decoration: none;
+}
+
+.footer-copyright {
+  width: 175px;
 }
 
 .footer-contacts-address-phone {
