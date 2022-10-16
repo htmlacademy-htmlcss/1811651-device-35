@@ -221,7 +221,6 @@ body {
 
 .catalog-categories-item {
   width: 160px;
-
 }
 
 .catalog-categories-link {
@@ -234,7 +233,16 @@ body {
   /*Benefits-index*/
  .benefits {
   background-color: #f0f0f0;
+}
 
+.benefits-container {
+  display: flex;
+}
+
+.benefits-title-list {
+  width: 287px;
+  margin: 0;
+  padding: 0;
 }
 
  .button-benefits-current {
@@ -242,6 +250,10 @@ body {
 }
 
 
+.benefits-content-list {
+  margin: 0;
+  padding: 0;
+}
 
   /*delivery-index*/
 .delivery-button {
