@@ -261,7 +261,16 @@ body {
   line-height: 23px;
 }
 
+.about-contacts-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
   /*about-index*/
+.about {
+  width: 520px;
+}
+
 .delivery-company-item {
   font-size: 18px;
   line-height: 20px;
@@ -269,6 +278,10 @@ body {
 }
 
   /*Contacts-index*/
+.contacts {
+  width: 532px;
+}
+
 .contacts-subtitle {
   color: #444;
 }
