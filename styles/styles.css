@@ -132,6 +132,15 @@ body {
   color: #444;
 }
 
+.promo-slider-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-container {
+  width: 560px;
+}
+
 /*Breadcrumbs-catalog*/
 .breadcrumbs-link {
   font-size: 16px;
