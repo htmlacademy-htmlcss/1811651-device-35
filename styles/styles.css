@@ -115,6 +115,12 @@ body {
   color: inherit;
   background-color: inherit;
 }
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
   /*Promo-index*/
 .property-values {
   font-size: 36px;
