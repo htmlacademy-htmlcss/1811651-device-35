@@ -74,13 +74,6 @@ body {
   text-decoration: none;
 }
 
-.header-container{
-  width: 1040px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
 /*Header*/
 .page-header {
@@ -90,10 +83,17 @@ body {
   margin: 0 auto;
 }
 
-/* .navigation {        Я так понял навигацию нужно делать с помощью флексбокса который вложен в другой( в данном случае флексбокс .navigation должен быть вложен в .header-container). И он должен быть многострочным? Немного запутался с реализацией данного блока.
+.header-container{
+  width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ /* .navigation {        Я так понял навигацию нужно делать с помощью флексбокса который вложен в другой( в данном случае флексбокс .navigation должен быть вложен в .header-container). И он должен быть многострочным? Немного запутался с реализацией данного блока.
   display: flex;
 } */
-
 
 
 .navigation-link {
@@ -264,6 +264,8 @@ body {
 .about-contacts-columns {
   display: flex;
   justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
 }
 
   /*about-index*/
