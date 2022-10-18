@@ -72,7 +72,7 @@
         <div class="catalog-container">
           <div class="catalog-wrapper">
             <section class="catalog-products">
-              <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+              <!-- <h2 class="visually-hidden">Список товаров с фильтрами</h2> -->
 
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <h3 class="catalog-form-title title-2">Фильтр:</h3>
@@ -134,79 +134,80 @@
                 </fieldset>
                 <button class="button" type="submit">Показать</button>
               </form>
+              <div class="catalog-right-column">
+                <div class="sorting-container">
+                  <h3 class="catalog-form-title title-2">Сортировка:</h3>
+                  <select class="select-control" aria-label="Сортировка">
+                    <option value="popular">Популярные</option>
+                    <option value="cheap">Дешевые</option>
+                    <option value="expensive">Дорогие</option>
+                  </select>
 
-              <div class="sorting-container">
-                <h3 class="catalog-form-title title-2">Сортировка:</h3>
-                <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Популярные</option>
-                  <option value="cheap">Дешевые</option>
-                  <option value="expensive">Дорогие</option>
-                </select>
-
-                <button class="button-sort" type="button">
-                  <span class="visually-hidden">Показать от меньшего к большему</span>
-                </button>
-                <button class="button-sort" type="button">
-                  <span class="visually-hidden">Показать от большего к меньшему</span>
-                </button>
-              </div>
+                  <button class="button-sort" type="button">
+                    <span class="visually-hidden">Показать от меньшего к большему</span>
+                  </button>
+                  <button class="button-sort" type="button">
+                    <span class="visually-hidden">Показать от большего к меньшему</span>
+                  </button>
+                </div>
 
 
-              <div class="products-cards-container">
-                <ul class="product-list">
-                  <li class="product-card">
-                    <img class="product-card-image" src="images/catalog/catalog-product-1-amateur-selfi-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                    <h3 class="product-card-title title-3">Любительская селфи-палка</h3>
-                    <p class="product-card-price">500 ₽</p>
-                    <button class="button visually-hidden" type="button">Подробнее</button>
-                  </li>
-                  <li class="product-card">
-                    <img class="product-card-image" src="images/catalog/catalog-product-2-proff-selfi-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                    <h3 class="product-card-title title-3">Профессиональная селфи-палка</h3>
-                    <p class="product-card-price">1 500 ₽</p>
-                    <button class="button visually-hidden" type="button">Подробнее</button>
-                  </li>
-                  <li class="product-card">
-                    <img class="product-card-image" src="images/catalog/catalog-product-3-unsinkable-selfi-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                    <h3 class="product-card-title title-3">Непотопляемая селфи-палка</h3>
-                    <p class="product-card-price">2 500 ₽</p>
-                    <button class="button visually-hidden" type="button">Подробнее</button>
-                  </li>
-                  <li class="product-card">
-                    <img class="product-card-image" src="images/catalog/catalog-product-4-selfi-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
-                    <h3 class="product-card-title title-3">Селфи-палка "Следуй за мной"</h3>
-                    <p class="product-card-price">1 500 ₽</p>
-                    <button class="button visually-hidden" type="button">Подробнее</button>
-                  </li>
-                </ul> <!--/product-list-->
-                <button class="button button-load-more" type="button">Загрузить ещё</button>
-                <ul class="pagination">
-                  <li class="pagination-item">
-                    <a class="button pagination-prev pagination-disabled">
-                      Назад
-                    </a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link pagination-current">1</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">3</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link pagination-disabled">...</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">15</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="button pagination-next" href="#">
-                      Вперед
-                    </a>
-                  </li>
-                </ul>
+                <div class="products-cards-container">
+                  <ul class="product-list">
+                    <li class="product-card">
+                      <img class="product-card-image" src="images/catalog/catalog-product-1-amateur-selfi-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                      <h3 class="product-card-title title-3">Любительская селфи-палка</h3>
+                      <p class="product-card-price">500 ₽</p>
+                      <button class="button visually-hidden" type="button">Подробнее</button>
+                    </li>
+                    <li class="product-card">
+                      <img class="product-card-image" src="images/catalog/catalog-product-2-proff-selfi-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                      <h3 class="product-card-title title-3">Профессиональная селфи-палка</h3>
+                      <p class="product-card-price">1 500 ₽</p>
+                      <button class="button visually-hidden" type="button">Подробнее</button>
+                    </li>
+                    <li class="product-card">
+                      <img class="product-card-image" src="images/catalog/catalog-product-3-unsinkable-selfi-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                      <h3 class="product-card-title title-3">Непотопляемая селфи-палка</h3>
+                      <p class="product-card-price">2 500 ₽</p>
+                      <button class="button visually-hidden" type="button">Подробнее</button>
+                    </li>
+                    <li class="product-card">
+                      <img class="product-card-image" src="images/catalog/catalog-product-4-selfi-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
+                      <h3 class="product-card-title title-3">Селфи-палка "Следуй за мной"</h3>
+                      <p class="product-card-price">1 500 ₽</p>
+                      <button class="button visually-hidden" type="button">Подробнее</button>
+                    </li>
+                  </ul> <!--/product-list-->
+                  <button class="button button-load-more" type="button">Загрузить ещё</button>
+                  <ul class="pagination">
+                    <li class="pagination-item">
+                      <a class="button pagination-prev pagination-disabled">
+                        Назад
+                      </a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-current">1</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-disabled">...</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">15</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="button pagination-next" href="#">
+                        Вперед
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </section>
           </div> <!--/catalog-wrapper-->
