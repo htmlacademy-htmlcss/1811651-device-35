@@ -154,6 +154,11 @@ body {
   background-color: #f0f0f0;
 }
 
+.catalog-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .catalog-form-title{
   font-size: 16px;
   line-height: 19px;
