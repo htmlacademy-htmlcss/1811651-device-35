@@ -26,6 +26,12 @@ html {
   height: 100%;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -47,6 +53,11 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0;
+  margin: 0;
 }
 
 /*Универсальные классы*/
@@ -131,6 +142,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  padding-top: 35px;
 }
 
 /*Main-index*/
