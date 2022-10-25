@@ -289,6 +289,12 @@ h1,h2,h3,h4,h5,h6,p {
   width: 840px;
 }
 
+.product-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .products-cards-container{
   background-color: #fff;
 }
@@ -310,16 +316,46 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .pagination {
+  width: 760px;
   background-color: #f0f0f0;
+  display: flex;
+  padding: 15px;
+  margin: 0 auto;
+  list-style-type: none;
+  align-items: center;
+}
+
+.pagination-item {
+  padding: 10px 16.5px;
+}
+
+.pagination-item:first-of-type {
+  margin-right: auto;
+  padding: 0;
+}
+
+.pagination-item:last-of-type {
+  margin-left: auto;
+  padding: 0;
 }
 
 .pagination-link {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #444;
   text-decoration: none;
   opacity: 0.6;
+}
+
+.pagination-next {
+  margin-left: auto;
+  padding: 25px;
+}
+
+.pagination-prev {
+  padding: 25px;
 }
 
 .pagination-disabled {
