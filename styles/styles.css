@@ -157,14 +157,33 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
   /*Promo-index*/
-.property-values {
-  font-size: 36px;
-  color: #000;
+
+
+.property-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
-.property {
+.property-list-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.property-term {
   font-size: 16px;
-  color: #444;
+}
+
+.property-definition {
+  font-size: 36px;
+  color: #000;
+  margin: 0 auto 12px 0;
+}
+
+.property-list-container:not(:last-child) {
+  margin-right: 20px;
 }
 
 .promo-slider-item {
@@ -174,6 +193,20 @@ h1,h2,h3,h4,h5,h6,p {
 
 .promo-container {
   width: 560px;
+}
+
+.promo-title {
+  margin-bottom: 30px;
+}
+
+.promo-text {
+  margin-bottom: 50px;
+}
+
+.promo-more {
+  display: block;
+  width: 210px;
+  margin-bottom: 50px;
 }
 
 /*Breadcrumbs-catalog*/
