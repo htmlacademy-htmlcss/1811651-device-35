@@ -508,9 +508,18 @@ h1,h2,h3,h4,h5,h6,p {
 
 .footer-container {
   width: 1160px;
-  display: flex;
   margin: 0 auto;
+}
+
+.footer-wrapper {
+  margin-bottom: 70px;
+  display: flex;
   justify-content: space-between;
+}
+
+.footer-contacts-logo {
+  display: block;
+  margin: 62px 0 35px 0;
 }
 
 .footer-contacts-address {
@@ -522,21 +531,51 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .footer-links {
-  width: 444px;
+  min-width: 444px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 .footer-menu-link {
+  display: block;
   color: #fff;
-  text-align:left;
   text-decoration: none;
+}
+
+.footer-menu-item {
+  margin-right: 25px;
+}
+
+.footer-menu-item:last-of-type {
+  margin-right: 0;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+
 }
 
 .footer-copyright {
   width: 175px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-contacts-address-phone {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+  min-height: 20px;
 }
