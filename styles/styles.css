@@ -394,6 +394,7 @@ h1,h2,h3,h4,h5,h6,p {
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .about-title {
@@ -436,18 +437,36 @@ h1,h2,h3,h4,h5,h6,p {
   width: 532px;
 }
 
+.contacts-title {
+  margin: 48px 0;
+}
+
+.contacts-text {
+  margin-bottom: 30px;
+}
+
 .contacts-subtitle {
   color: #444;
+  margin-bottom: 15px;
 }
 
 .contacts-address {
   font-style: normal;
   color: #444;
+  margin-bottom: 30px;
 }
 
 .contacts-address-phone {
   color: #444;
 }
+
+.contacts-schedule {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
 
   /*Subscribe-index*/
 .subscribe {
