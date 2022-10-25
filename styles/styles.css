@@ -378,9 +378,13 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
   /*delivery-index*/
+
+
 .delivery-button {
   font-size: 20px;
   line-height: 23px;
+  width: 1160px;
+  height: 100px;
 }
 
 .about-contacts-columns {
