@@ -1,0 +1,643 @@
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #fff;
+  color: #444;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0;
+  margin: 0;
+}
+
+/*Универсальные классы*/
+.title-1 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color:#000
+}
+.title-2 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000;
+}
+.title-3 {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+.button {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+
+
+/*Header*/
+.page-header {
+  width: 1160px;
+  background-color: #FFE17F;
+  color: #000;
+  margin: 0 auto;
+}
+
+.header-container{
+  width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* По поводу навигации, я попробую сверстать на гридах, если мне будет неудобно её реализовывать, то попробую сделать через флексы. Тобишь в следующем разделе про гриды. Так можно?)) */
+
+
+.navigation-link {
+  color:#000;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+}
+
+.navigation-userlist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-container {
+  flex-grow: 1;
+  padding-top: 35px;
+}
+
+/*Main-index*/
+.main-index {
+  color: inherit;
+  background-color: inherit;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+  /*Promo-index*/
+
+.promo-slider {
+  margin-bottom: 70px;
+}
+
+.property-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.property-list-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.property-term {
+  font-size: 16px;
+}
+
+.property-definition {
+  font-size: 36px;
+  color: #000;
+  margin: 0 auto 12px 0;
+}
+
+.property-list-container:not(:last-child) {
+  margin-right: 20px;
+}
+
+.promo-slider-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-container {
+  width: 560px;
+}
+
+.promo-title {
+  margin-bottom: 30px;
+}
+
+.promo-text {
+  margin-bottom: 50px;
+}
+
+.promo-more {
+  display: block;
+  width: 210px;
+  margin-bottom: 50px;
+}
+/* Header-inner catalog */
+.inner-header {
+  margin-bottom: 35px;
+}
+
+.inner-header-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+/*Breadcrumbs-catalog*/
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+  margin-right: 36px;
+}
+
+/*Catalog-products*/
+.catalog-container{
+  background-color: #f0f0f0;
+}
+
+.catalog-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+}
+
+.catalog-form-title{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-filter-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
+.control {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+.sorting-container {
+  display: flex;
+  padding: 20px 40px;
+}
+
+.button-sort {
+  width: 30px;
+  height: 30px;
+}
+
+/*Product-cards-catalog*/
+.catalog-right-column {
+  width: 840px;
+}
+
+.product-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.products-cards-container{
+  background-color: #fff;
+}
+
+.product-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
+.product-card-price {
+  line-height: 21px;
+  text-align: right;
+}
+
+.button-load-more {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pagination {
+  width: 760px;
+  background-color: #f0f0f0;
+  display: flex;
+  padding: 15px;
+  margin: 0 auto;
+  list-style-type: none;
+  align-items: center;
+}
+
+.pagination-item {
+  padding: 10px 16.5px;
+}
+
+.pagination-item:first-of-type {
+  margin-right: auto;
+  padding: 0;
+}
+
+.pagination-item:last-of-type {
+  margin-left: auto;
+  padding: 0;
+}
+
+.pagination-link {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.pagination-next {
+  margin-left: auto;
+  padding: 25px;
+}
+
+.pagination-prev {
+  padding: 25px;
+}
+
+.pagination-disabled {
+  color: #444;
+  opacity: 0.3;
+}
+
+
+  /*Catalog-categories-index*/
+.catalog-categories {
+  margin-bottom: 70px;
+}
+
+.catalog-categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.catalog-categories-item {
+  width: 160px;
+}
+
+.catalog-categories-link {
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+  /*Benefits-index*/
+ .benefits {
+  background-color: #f0f0f0;
+  margin-bottom: 70px;
+}
+
+.benefits-container {
+  display: flex;
+}
+
+.benefits-title-list {
+  width: 287px;
+  min-height: 190px;
+  margin: 0;
+  padding: 64px 0;
+  border-right: 7px #000 solid;
+  list-style-type: none;
+}
+
+.benefits-title-item {
+  margin-bottom: 45px;
+}
+
+.button-benefits {
+  width: 160px;
+  height: 40px;
+}
+
+ .button-benefits-current {
+  color: #FFE17F;
+  background-color: #000;
+  width: 280px;
+  height: 40px;
+}
+
+
+.benefits-content-list {
+  margin: 72px auto 145px 116px;
+  padding: 0;
+  list-style-type: none;
+  width: 694px;
+
+}
+
+.benefits-content-title {
+  margin-bottom: 34px;
+}
+
+.benefits-content-text {
+  max-width: 452px;
+}
+
+  /*delivery-index*/
+.delivery {
+  margin-bottom: 70px;
+}
+
+.delivery-button {
+  font-size: 20px;
+  line-height: 23px;
+  width: 1160px;
+  height: 100px;
+}
+
+.about-contacts-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.about-title {
+  margin-bottom: 48px;
+  margin-top: 47px;
+}
+
+.about-text {
+  margin-bottom: 30px;
+}
+
+.delivery-company-list {
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.delivery-company-item {
+  margin-bottom: 19px;
+}
+
+.about-more {
+  display: inline-block;
+  margin-bottom: 52px;
+}
+
+  /*about-index*/
+.about {
+  width: 520px;
+}
+
+.delivery-company-item {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
+  /*Contacts-index*/
+.contacts {
+  width: 532px;
+}
+
+.contacts-title {
+  margin: 48px 0;
+}
+
+.contacts-text {
+  margin-bottom: 30px;
+}
+
+.contacts-subtitle {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.contacts-address {
+  font-style: normal;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.contacts-address-phone {
+  color: #444;
+}
+
+.contacts-schedule {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+  /*Subscribe-index*/
+.subscribe {
+  background-color: #f0f0f0;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subscribe-title {
+  margin: 64px 0 144px 0;
+  max-width: 348px;
+  min-height: 100px;
+}
+
+.subscribe-text {
+  margin: 74px 0 144px 0;
+  max-width: 560px;
+  min-height: 90px;
+}
+
+.subscribe-form {
+  margin-bottom: 56px;
+}
+
+.subscribe-subtext {
+  margin-bottom: 56px;
+}
+
+
+
+/*Footer*/
+.page-footer {
+  background-color: #444;
+}
+
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts-logo {
+  display: block;
+  margin: 62px 0 35px 0;
+}
+
+.footer-contacts-address {
+  width: 239px;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #fff;
+}
+
+.footer-links {
+  min-width: 444px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer-menu-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-menu-item {
+  margin-right: 25px;
+}
+
+.footer-menu-item:last-of-type {
+  margin-right: 0;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+
+}
+
+.footer-copyright {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts-address-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  min-height: 20px;
+}
