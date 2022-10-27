@@ -26,6 +26,12 @@ html {
   height: 100%;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -38,8 +44,22 @@ body {
   color: #444;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 /*Универсальные классы*/
 .title-1 {
+  margin: 0;
+  padding: 0;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -47,6 +67,8 @@ body {
   color:#000
 }
 .title-2 {
+  margin: 0;
+  padding: 0;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -56,6 +78,8 @@ body {
   color: #000;
 }
 .title-3 {
+  margin: 0;
+  padding: 0;
   font-family: "rubik", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -72,6 +96,7 @@ body {
   letter-spacing: 4px;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
 }
 
 
@@ -91,10 +116,6 @@ body {
   align-items: flex-start;
 }
 
- /* .navigation {        Я так понял навигацию нужно делать с помощью флексбокса который вложен в другой( в данном случае флексбокс .navigation должен быть вложен в .header-container). И он должен быть многострочным? Немного запутался с реализацией данного блока.
-  display: flex;
-} */
-
 
 .navigation-link {
   color:#000;
@@ -106,8 +127,21 @@ body {
   text-decoration: none;
 }
 
+.navigation-userlist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .main-container {
   flex-grow: 1;
+  padding-top: 35px;
 }
 
 /*Main-index*/
@@ -122,14 +156,36 @@ body {
 }
 
   /*Promo-index*/
-.property-values {
-  font-size: 36px;
-  color: #000;
+
+.promo-slider {
+  margin-bottom: 70px;
 }
 
-.property {
+.property-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.property-list-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.property-term {
   font-size: 16px;
-  color: #444;
+}
+
+.property-definition {
+  font-size: 36px;
+  color: #000;
+  margin: 0 auto 12px 0;
+}
+
+.property-list-container:not(:last-child) {
+  margin-right: 20px;
 }
 
 .promo-slider-item {
@@ -141,12 +197,46 @@ body {
   width: 560px;
 }
 
+.promo-title {
+  margin-bottom: 30px;
+}
+
+.promo-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.promo-more {
+  display: block;
+  width: 210px;
+  margin-bottom: 50px;
+}
+/* Header-inner catalog */
+.inner-header {
+  margin-bottom: 35px;
+}
+
+.inner-header-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
 /*Breadcrumbs-catalog*/
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
   color: #000;
   text-decoration: none;
+  margin-right: 36px;
 }
 
 /*Catalog-products*/
@@ -184,9 +274,25 @@ body {
   color: #000;
 }
 
+.sorting-container {
+  display: flex;
+  padding: 20px 40px;
+}
+
+.button-sort {
+  width: 30px;
+  height: 30px;
+}
+
 /*Product-cards-catalog*/
 .catalog-right-column {
   width: 840px;
+}
+
+.product-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .products-cards-container{
@@ -210,16 +316,46 @@ body {
 }
 
 .pagination {
+  width: 760px;
   background-color: #f0f0f0;
+  display: flex;
+  padding: 15px;
+  margin: 0 auto;
+  list-style-type: none;
+  align-items: center;
+}
+
+.pagination-item {
+  padding: 10px 17px;
+}
+
+.pagination-item:first-of-type {
+  margin-right: auto;
+  padding: 0;
+}
+
+.pagination-item:last-of-type {
+  margin-left: auto;
+  padding: 0;
 }
 
 .pagination-link {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #444;
   text-decoration: none;
   opacity: 0.6;
+}
+
+.pagination-next {
+  margin-left: auto;
+  padding: 25px;
+}
+
+.pagination-prev {
+  padding: 25px;
 }
 
 .pagination-disabled {
@@ -229,11 +365,17 @@ body {
 
 
   /*Catalog-categories-index*/
+.catalog-categories {
+  margin-bottom: 70px;
+}
+
 .catalog-categories-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .catalog-categories-item {
@@ -250,6 +392,7 @@ body {
   /*Benefits-index*/
  .benefits {
   background-color: #f0f0f0;
+  margin-bottom: 70px;
 }
 
 .benefits-container {
@@ -257,25 +400,60 @@ body {
 }
 
 .benefits-title-list {
-  width: 287px;
+  min-width: 287px;
+  min-height: 190px;
   margin: 0;
-  padding: 0;
+  padding: 64px 0;
+  border-right: 7px #000 solid;
+  list-style-type: none;
+}
+
+.benefits-title-item {
+  margin-bottom: 45px;
+}
+
+.button-benefits {
+  min-width: 160px;
+  min-height: 40px;
 }
 
  .button-benefits-current {
   color: #FFE17F;
+  background-color: #000;
+  min-width: 280px;
+  min-height: 40px;
 }
 
 
 .benefits-content-list {
+  margin: 72px auto 145px 116px;
+  padding: 0;
+  list-style-type: none;
+  width: 694px;
+}
+
+.benefits-content-title {
+  margin-bottom: 34px;
+}
+
+.benefits-content-text {
   margin: 0;
   padding: 0;
+  max-width: 452px;
 }
 
   /*delivery-index*/
+.delivery {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
 .delivery-button {
   font-size: 20px;
   line-height: 23px;
+  width: 1160px;
+  min-height: 100px;
 }
 
 .about-contacts-columns {
@@ -283,6 +461,33 @@ body {
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.about-title {
+  margin-bottom: 48px;
+  margin-top: 47px;
+}
+
+.about-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.delivery-company-list {
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.delivery-company-item {
+  margin-bottom: 19px;
+}
+
+.about-more {
+  display: inline-block;
+  margin-bottom: 52px;
 }
 
   /*about-index*/
@@ -301,23 +506,73 @@ body {
   width: 532px;
 }
 
+.contacts-title {
+  margin: 48px 0;
+}
+
+.contacts-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
 .contacts-subtitle {
   color: #444;
+  margin-bottom: 15px;
 }
 
 .contacts-address {
   font-style: normal;
   color: #444;
+  margin-bottom: 30px;
 }
 
 .contacts-address-phone {
   color: #444;
 }
 
+.contacts-schedule {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+
   /*Subscribe-index*/
 .subscribe {
   background-color: #f0f0f0;
 }
+
+.subscribe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.subscribe-title {
+  margin: 64px 0 144px 0;
+  max-width: 348px;
+  min-height: 100px;
+}
+
+.subscribe-text {
+  margin: 74px 0 144px 0;
+  max-width: 560px;
+  min-height: 90px;
+}
+
+.subscribe-form {
+  margin-bottom: 56px;
+}
+
+.subscribe-subtext {
+  margin-bottom: 56px;
+}
+
+
 
 /*Footer*/
 .page-footer {
@@ -326,9 +581,18 @@ body {
 
 .footer-container {
   width: 1160px;
-  display: flex;
   margin: 0 auto;
+}
+
+.footer-wrapper {
+  margin-bottom: 70px;
+  display: flex;
   justify-content: space-between;
+}
+
+.footer-contacts-logo {
+  display: block;
+  margin: 62px 0 35px 0;
 }
 
 .footer-contacts-address {
@@ -339,22 +603,47 @@ body {
   color: #fff;
 }
 
-.footer-links {
-  width: 444px;
+
+
+.footer-menu-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
 }
 
 .footer-menu-link {
+  display: block;
   color: #fff;
-  text-align:left;
   text-decoration: none;
+}
+
+.footer-menu-item {
+  margin-right: 25px;
+}
+
+.footer-menu-item:last-of-type {
+  margin-right: 0;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
 }
 
 .footer-copyright {
   width: 175px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-contacts-address-phone {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+  min-height: 20px;
 }
