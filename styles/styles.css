@@ -116,8 +116,6 @@ body {
   align-items: flex-start;
 }
 
-/* По поводу навигации, я попробую сверстать на гридах, если мне будет неудобно её реализовывать, то попробую сделать через флексы. Тобишь в следующем разделе про гриды. Так можно?)) */
-
 
 .navigation-link {
   color:#000;
@@ -446,9 +444,9 @@ body {
 
   /*delivery-index*/
 .delivery {
-  margin-bottom: 70px;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .delivery-button {
