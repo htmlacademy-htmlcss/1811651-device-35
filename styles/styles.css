@@ -442,6 +442,8 @@ h1,h2,h3,h4,h5,h6,p {
   /*delivery-index*/
 .delivery {
   margin-bottom: 70px;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .delivery-button {
