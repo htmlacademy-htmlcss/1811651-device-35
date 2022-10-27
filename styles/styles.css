@@ -541,6 +541,8 @@ h1,h2,h3,h4,h5,h6,p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .subscribe-title {
