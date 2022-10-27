@@ -55,13 +55,11 @@ body {
   overflow: hidden;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-  padding: 0;
-  margin: 0;
-}
 
 /*Универсальные классы*/
 .title-1 {
+  margin: 0;
+  padding: 0;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -69,6 +67,8 @@ h1,h2,h3,h4,h5,h6,p {
   color:#000
 }
 .title-2 {
+  margin: 0;
+  padding: 0;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -78,6 +78,8 @@ h1,h2,h3,h4,h5,h6,p {
   color: #000;
 }
 .title-3 {
+  margin: 0;
+  padding: 0;
   font-family: "rubik", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -113,8 +115,6 @@ h1,h2,h3,h4,h5,h6,p {
   flex-direction: column;
   align-items: flex-start;
 }
-
-/* По поводу навигации, я попробую сверстать на гридах, если мне будет неудобно её реализовывать, то попробую сделать через флексы. Тобишь в следующем разделе про гриды. Так можно?)) */
 
 
 .navigation-link {
@@ -202,6 +202,8 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .promo-text {
+  margin: 0;
+  padding: 0;
   margin-bottom: 50px;
 }
 
@@ -324,7 +326,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .pagination-item {
-  padding: 10px 16.5px;
+  padding: 10px 17px;
 }
 
 .pagination-item:first-of-type {
@@ -398,7 +400,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .benefits-title-list {
-  width: 287px;
+  min-width: 287px;
   min-height: 190px;
   margin: 0;
   padding: 64px 0;
@@ -411,15 +413,15 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .button-benefits {
-  width: 160px;
-  height: 40px;
+  min-width: 160px;
+  min-height: 40px;
 }
 
  .button-benefits-current {
   color: #FFE17F;
   background-color: #000;
-  width: 280px;
-  height: 40px;
+  min-width: 280px;
+  min-height: 40px;
 }
 
 
@@ -428,7 +430,6 @@ h1,h2,h3,h4,h5,h6,p {
   padding: 0;
   list-style-type: none;
   width: 694px;
-
 }
 
 .benefits-content-title {
@@ -436,11 +437,15 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .benefits-content-text {
+  margin: 0;
+  padding: 0;
   max-width: 452px;
 }
 
   /*delivery-index*/
 .delivery {
+  width: 1160px;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
@@ -448,7 +453,7 @@ h1,h2,h3,h4,h5,h6,p {
   font-size: 20px;
   line-height: 23px;
   width: 1160px;
-  height: 100px;
+  min-height: 100px;
 }
 
 .about-contacts-columns {
@@ -465,6 +470,8 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .about-text {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
 }
 
@@ -504,6 +511,8 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .contacts-text {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
 }
 
@@ -539,6 +548,8 @@ h1,h2,h3,h4,h5,h6,p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .subscribe-title {
@@ -592,18 +603,14 @@ h1,h2,h3,h4,h5,h6,p {
   color: #fff;
 }
 
-.footer-links {
-  min-width: 444px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .footer-menu-list {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
 }
 
@@ -626,7 +633,6 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
   display: flex;
   list-style-type: none;
-
 }
 
 .footer-copyright {
