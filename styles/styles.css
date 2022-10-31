@@ -638,6 +638,10 @@ body {
 .footer-container {
   width: 1160px;
   margin: 0 auto;
+  padding: 62px 0;
+  display: grid;
+  grid-template-columns: 239px 444px 238px;
+  gap: 30px 119px;
 }
 
 .footer-wrapper {
@@ -648,7 +652,8 @@ body {
 
 .footer-contacts-logo {
   display: block;
-  margin: 62px 0 35px 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .footer-contacts-address {
@@ -657,8 +662,9 @@ body {
   line-height: 20px;
   font-style: normal;
   color: #fff;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
-
 
 
 .footer-menu-list {
@@ -668,20 +674,14 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .footer-menu-link {
   display: block;
   color: #fff;
   text-decoration: none;
-}
-
-.footer-menu-item {
-  margin-right: 25px;
-}
-
-.footer-menu-item:last-of-type {
-  margin-right: 0;
 }
 
 .footer-social-list {
@@ -695,6 +695,9 @@ body {
   width: 175px;
   display: flex;
   flex-direction: column;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: end;
 }
 
 .footer-contacts-address-phone {
