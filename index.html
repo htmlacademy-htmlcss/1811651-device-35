@@ -20,21 +20,39 @@
         <nav class="navigation">
           <ul class="navigation-userlist">
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Войти</a>
+              <a href="#" class="navigation-link navigation-link-sign-in">Войти</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link visually-hidden">Выйти</a>
+              <a href="#" class="navigation-link navigation-link-exit visually-hidden">Выйти</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Сравнить</a>
+              <a href="#" class="navigation-link navigation-link-compare">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Корзина</a>
+              <a href="#" class="navigation-link navigation-link-basket">Корзина</a>
             </li>
           </ul>
         </nav> <!--/navigation-userlist-->
 
-          <button class="catalog-toggle title-2" type="button" value="Каталог товаров" name="catalog">Каталог товаров</button>
+          <button class="catalog-toggle title-2" type="button" value="Каталог товаров" name="catalog">
+            Каталог товаров
+            <svg class="circle cirle-plus" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.3" cx="25" cy="25.787" r="24" stroke="black" stroke-width="2"/>
+            <g opacity="0.3" clip-path="url(#clip0_11316_202)">
+            <path d="M33 24.787H26V17.787H24V24.787H17V26.787H24V33.787H26V26.787H33V24.787Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_11316_202">
+            <rect width="16" height="16" fill="white" transform="translate(17 17.787)"/>
+            </clipPath>
+            </defs>
+            </svg>
+
+            <svg class="circle circle-minus" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M49 25.787C49 39.0418 38.2548 49.787 25 49.787C11.7452 49.787 1 39.0418 1 25.787C1 12.5322 11.7452 1.78699 25 1.78699C38.2548 1.78699 49 12.5322 49 25.787Z" stroke="black" stroke-width="2"/>
+              <path d="M33 24.787H17V26.787H33V24.787Z" fill="black"/>
+            </svg>
+          </button>
 
           <ul class="menu">
             <li class="menu-item">
