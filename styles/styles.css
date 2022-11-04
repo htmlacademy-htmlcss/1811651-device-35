@@ -88,6 +88,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -97,6 +98,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 
 
@@ -106,6 +108,8 @@ body {
   background-color: #FFE17F;
   color: #000;
   margin: 0 auto;
+  position: relative;
+  margin-top: 40px;
 }
 
 .header-container{
@@ -116,17 +120,21 @@ body {
   gap: 30px;
 }
 .logo {
-  margin-top: 20px;
   grid-column: 1/2;
+  position: absolute;
+  left: 60px;
+  top: -20px;
 }
 
 .navigation-search-form {
   grid-row: 2/3;
+  margin-top: 21px;
 }
 
 .navigation {
   grid-column: 2/3;
   grid-row: 2/3;
+  margin-top: 21px;
 }
 
 .catalog-toggle {
