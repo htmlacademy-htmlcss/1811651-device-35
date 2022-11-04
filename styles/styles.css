@@ -101,6 +101,19 @@ body {
   cursor: pointer;
 }
 
+.style-1:hover {
+  opacity: 0.6;
+}
+
+.style-1:active {
+  opacity: 0.3;
+}
+
+.style-1:focus-visible {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
 
 /*Header*/
 .page-header {
@@ -126,6 +139,7 @@ body {
   left: 60px;
   top: -20px;
 }
+
 
 .navigation-search-form {
   grid-row: 2/3;
@@ -156,11 +170,23 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
+  opacity: 0.3;
 }
 
 .circle-minus {
   display: none;
 }
+
+.catalog-toggle:hover .circle,
+.catalog-toggle:active .circle {
+  opacity: 1;
+}
+
+.catalog-toggle:focus-visible {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
 
 .navigation-search-input {
   width: 352px;
@@ -179,6 +205,15 @@ body {
   background-position: center left 16px;
 }
 
+.navigation-search-input:focus-visible {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
+.navigation-search-input:disabled {
+  opacity: 0.3;
+}
+
 .navigation-button-search {
   width: 160px;
   padding: 8px 54px;
@@ -191,6 +226,29 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+}
+
+.navigation-button-search:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.navigation-button-search:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.navigation-button-search:active .search-title {
+  opacity: 0.3;
+}
+
+.navigation-button-search:focus-visible {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
+.navigation-button-search:disabled {
+  opacity: 0.3;
 }
 
 
@@ -206,6 +264,10 @@ body {
   padding-left: 26px;
   background: url("../images/decorative-images/user-icon.svg") no-repeat 0 50%;
   background-size: 13px 12px;
+}
+
+.navigation-link-exit {
+  opacity: 0.3;
 }
 
 .navigation-link-compare {

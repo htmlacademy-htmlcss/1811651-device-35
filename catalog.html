@@ -10,41 +10,59 @@
     <header class="page-header">
       <div class="header-container">
         <h1 class="visually-hidden">Интернет магазин Девайс</h1>
-        <a href="index.html">
-          <img class="logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип интернет магазина device">
+        <a class="logo style-1" href="index.html">
+          <img src="images/logo-header.svg" width="145" height="36" alt="Логотип интернет магазина device">
         </a>
         <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get" name="navigation-search">
           <input class="navigation-search-input" type="search" placeholder="Поиск по сайту">
-          <button class="navigation-button-search" type="submit" name="search">Найти</button>
+          <button class="navigation-button-search" type="submit" name="search"><span class="search-title">Найти</span></button>
         </form>
         <nav class="navigation">
           <ul class="navigation-userlist">
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Коля Петухов</a>
+              <a href="#" class="navigation-link navigation-link-sign-in style-1">Коля Петухов</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Выйти</a>
+              <a href="#" class="navigation-link navigation-link-exit style-1">Выйти</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Сравнить</a>
+              <a href="#" class="navigation-link navigation-link-compare style-1">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Корзина</a>
+              <a href="#" class="navigation-link navigation-link-basket style-1">Корзина</a>
             </li>
           </ul>
         </nav> <!--/navigation-userlist-->
 
-          <button class="catalog-toggle title-2" type="button" value="Каталог товаров" name="catalog">Каталог товаров</button>
+        <button class="catalog-toggle title-2" type="button" value="Каталог товаров" name="catalog">
+          Каталог товаров
+          <svg class="circle cirle-plus" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25.787" r="24" stroke="black" stroke-width="2"/>
+            <g clip-path="url(#clip0_11423_1729)">
+            <path d="M33 24.787H26V17.787H24V24.787H17V26.787H24V33.787H26V26.787H33V24.787Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_11423_1729">
+            <rect width="16" height="16" fill="white" transform="translate(17 17.787)"/>
+            </clipPath>
+            </defs>
+            </svg>
+
+          <svg class="circle circle-minus" width="50" height="50" aria-hidden="true" focusable="false" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M49 25.787C49 39.0418 38.2548 49.787 25 49.787C11.7452 49.787 1 39.0418 1 25.787C1 12.5322 11.7452 1.78699 25 1.78699C38.2548 1.78699 49 12.5322 49 25.787Z" stroke="black" stroke-width="2"/>
+            <path d="M33 24.787H17V26.787H33V24.787Z" fill="black"/>
+            </svg>
+        </button>
 
           <ul class="menu">
             <li class="menu-item">
-              <a href="#" class="menu-link title-2">Доставка</a>
+              <a href="#" class="menu-link title-2 style-1">Доставка</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link title-2">Гарантия</a>
+              <a href="#" class="menu-link title-2 style-1">Гарантия</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link title-2">Контакты</a>
+              <a href="#" class="menu-link title-2 style-1">Контакты</a>
             </li>
           </ul> <!--/menu-->
       </div>
