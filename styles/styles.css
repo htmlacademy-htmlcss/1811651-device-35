@@ -89,6 +89,7 @@ body {
 
 .button {
   display: inline-block;
+  padding: 10px 5px;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -99,6 +100,29 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
+}
+
+.button-yellow {
+  background: url("../images/decorative-images/button.svg") no-repeat 0 50%;
+}
+
+.button-yellow:hover {
+  background-color: #FFE17F;
+  background-image: none;
+}
+
+.button-yellow:active {
+  background-color: #FFCC33;
+  background-image: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.3;
 }
 
 .style-1:hover {
