@@ -817,6 +817,15 @@ body {
   line-height: 30px;
 }
 
+.subscribe-input:focus-visible {
+  background-color: #DCDCDC;
+  outline: none;
+}
+
+.subscribe-input:disabled {
+  opacity: 0.3;
+}
+
 .subscribe-button {
   width: 253px;
   font-size: 18px;
