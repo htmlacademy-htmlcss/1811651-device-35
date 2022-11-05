@@ -507,6 +507,12 @@ body {
 .catalog-form-title{
   font-size: 16px;
   line-height: 19px;
+  letter-spacing: 3px;
+}
+
+.filter-title {
+  margin-bottom: 35px;
+  padding: 25px 0;
 }
 
 .catalog-filter-title {
@@ -521,14 +527,33 @@ body {
   color: #000;
 }
 
+.select-control {
+  width: 141px;
+  font-family:  "rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 2px 2px 2px 0;
+  background-color: inherit;
+  border: none;
+}
+
 .sorting-container {
   display: flex;
+  justify-content:space-between;
+  align-items: center;
   padding: 20px 40px;
 }
 
 .button-sort {
   width: 30px;
   height: 30px;
+  border: none;
+  background: url("../images/decorative-images/sort-up.svg") no-repeat 50% 50%;
+  cursor: pointer;
+}
+
+.sort-down {
+  transform: rotate(180deg);
 }
 
 /*Product-cards-catalog*/

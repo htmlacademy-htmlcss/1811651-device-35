@@ -92,7 +92,7 @@
               <!-- <h2 class="visually-hidden">Список товаров с фильтрами</h2> -->
 
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <h3 class="catalog-form-title title-2">Фильтр:</h3>
+                <h3 class="catalog-form-title filter-title title-2">Фильтр:</h3>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title title-3">Стоимость</legend>
                 </fieldset>
@@ -160,12 +160,14 @@
                     <option value="expensive">Дорогие</option>
                   </select>
 
-                  <button class="button-sort" type="button">
-                    <span class="visually-hidden">Показать от меньшего к большему</span>
-                  </button>
-                  <button class="button-sort" type="button">
-                    <span class="visually-hidden">Показать от большего к меньшему</span>
-                  </button>
+                  <div class="button-sort-container">
+                    <button class="button-sort sort-up" type="button">
+                      <span class="visually-hidden">Показать от меньшего к большему</span>
+                    </button>
+                    <button class="button-sort sort-down" type="button">
+                      <span class="visually-hidden">Показать от большего к меньшему</span>
+                    </button>
+                  </div>
                 </div>
 
 
@@ -174,25 +176,25 @@
                     <li class="product-card">
                       <img class="product-card-image" src="images/catalog/catalog-product-1-amateur-selfi-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
                       <h3 class="product-card-title title-3">Любительская селфи-палка</h3>
-                      <p class="product-card-price">500 ₽</p>
+                      <span class="product-card-price">500 ₽</span>
                       <button class="button visually-hidden" type="button">Подробнее</button>
                     </li>
                     <li class="product-card">
                       <img class="product-card-image" src="images/catalog/catalog-product-2-proff-selfi-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                       <h3 class="product-card-title title-3">Профессиональная селфи-палка</h3>
-                      <p class="product-card-price">1 500 ₽</p>
+                      <span class="product-card-price">1 500 ₽</span>
                       <button class="button visually-hidden" type="button">Подробнее</button>
                     </li>
                     <li class="product-card">
                       <img class="product-card-image" src="images/catalog/catalog-product-3-unsinkable-selfi-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                       <h3 class="product-card-title title-3">Непотопляемая селфи-палка</h3>
-                      <p class="product-card-price">2 500 ₽</p>
+                      <span class="product-card-price">2 500 ₽</span>
                       <button class="button visually-hidden" type="button">Подробнее</button>
                     </li>
                     <li class="product-card">
                       <img class="product-card-image" src="images/catalog/catalog-product-4-selfi-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
                       <h3 class="product-card-title title-3">Селфи-палка "Следуй за мной"</h3>
-                      <p class="product-card-price">1 500 ₽</p>
+                      <span class="product-card-price">1 500 ₽</span>
                       <button class="button visually-hidden" type="button">Подробнее</button>
                     </li>
                   </ul> <!--/product-list-->
