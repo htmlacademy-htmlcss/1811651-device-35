@@ -945,10 +945,13 @@ body {
 }
 
 .subscribe-subtext {
+  min-width: 160px;
   margin-bottom: 56px;
   align-self: center;
+  text-align: right;
+  background: url("../images/decorative-images/free.svg") no-repeat 0 50%;
+  background-size: 14px 14px;
 }
-
 
 
 /*Footer*/
