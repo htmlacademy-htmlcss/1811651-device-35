@@ -709,6 +709,16 @@ body {
   max-width: 452px;
 }
 
+.benefits-content-item{
+  position: relative;
+}
+
+.benefits-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
   /*delivery-index*/
 .delivery {
   width: 1160px;
