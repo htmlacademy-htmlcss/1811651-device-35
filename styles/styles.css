@@ -782,6 +782,14 @@ body {
   margin-bottom: 70px;
 }
 
+.about-contacts-columns section::before {
+  position: absolute;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000;
+}
+
 .about-title {
   margin-bottom: 48px;
   margin-top: 47px;
@@ -797,6 +805,10 @@ body {
   margin: 0;
   padding-left: 20px;
   margin-bottom: 30px;
+}
+
+.delivery-company-list li::marker {
+  color:#FFCC33;
 }
 
 .delivery-company-item {
