@@ -1069,7 +1069,8 @@ body {
   align-items: center;
 }
 
-.delivery-icon {
+.delivery-icon::before {
+  content: "";
   background-color: #FFE17F;
   margin: 0;
   width: 125px;
@@ -1079,7 +1080,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.delivery-info {
+.delivery-info::after {
+  content: "";
   margin: 0;
   width: 125px;
   height: 100px;
@@ -1089,11 +1091,11 @@ body {
   opacity: 0.6;
 }
 
-.delivery-button:hover .delivery-icon {
+.delivery-button:hover.delivery-icon::before {
   background-color: #FFCC33;
 }
 
-.delivery-button:hover .delivery-info {
+.delivery-button:hover.delivery-info::after {
   opacity: 1;
 }
 
