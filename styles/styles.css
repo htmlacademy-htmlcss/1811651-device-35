@@ -659,7 +659,7 @@ body {
   z-index: 1;
 }
 
-.product-card:focus-visible {
+.product-card-link:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -869,27 +869,84 @@ body {
 }
 
 .catalog-categories-link {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 33px;
-  justify-content: center;
+  align-items: flex-end;
+  min-height: 253px;
   line-height: 24px;
   letter-spacing: -0.36px;
   text-decoration: none;
   text-transform: none;
 }
 
-.catalog-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 160px;
-  min-height: 160px;
-  background-color: #FFE17F;
+.catalog-categories-title {
+  padding-bottom: 24px;
 }
 
-.catalog-categories-link:hover .catalog-image {
+
+.catalog-image::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  margin-bottom: 92px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.vr-icon::after {
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("../images/decorative-images/virtual-real-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.selfie-mono::after {
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("../images/decorative-images/selfie-monopods.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.action-camera::after {
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("../images/decorative-images/action-camera.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fitness-bracelet::after {
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("../images/decorative-images/fitness-bracelets.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smart-watch::after {
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("../images/decorative-images/smart-watch.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quadrocopter::after {
+  content: "";
+  background-color: #FFE17F;
+  background-image: url("../images/decorative-images/quadrocopter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.catalog-categories-link:hover.catalog-image::after {
   background-color: #FFCC33;
 }
 
