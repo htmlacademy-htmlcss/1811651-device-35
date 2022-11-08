@@ -137,15 +137,15 @@ body {
   opacity: 0.3;
 }
 
-.style-1:hover {
+.style-opacity:hover {
   opacity: 0.6;
 }
 
-.style-1:active {
+.style-opacity:active {
   opacity: 0.3;
 }
 
-.style-1:focus-visible {
+.style-opacity:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
 }
