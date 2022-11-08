@@ -1021,8 +1021,32 @@ body {
   position: relative;
 }
 
-.benefits-icon {
+.benefits-icon-delivery::after {
   position: absolute;
+  content: "";
+  background: url("../images/decorative-images/delivery.svg") no-repeat;
+  width: 136px;
+  height: 164px;
+  top: 0;
+  right: 0;
+}
+
+.benefits-icon-guarantee::after {
+  position: absolute;
+  content: "";
+  background: url("../images/decorative-images/guarantee.svg") no-repeat;
+  width: 171px;
+  height: 195px;
+  top: 0;
+  right: 0;
+}
+
+.benefits-icon-credit::after {
+  position: absolute;
+  content: "";
+  background: url("../images/decorative-images/credit.svg") no-repeat;
+  width: 156px;
+  height: 188px;
   top: 0;
   right: 0;
 }
