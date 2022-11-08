@@ -105,7 +105,7 @@ body {
   z-index: 1;
 }
 
-.button-yellow::after {
+.button-main::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -117,13 +117,13 @@ body {
   overflow: hidden;
 }
 
- .button-yellow:hover {
+ .button-main:hover {
   background-color: #FFE17F;
   background-image: none;
 }
 
-.button-yellow:active,
-.button-yellow:active.button-yellow::after {
+.button-main:active,
+.button-main:active.button-main::after {
   background-color: #FFCC33;
   background-image: none;
 }
