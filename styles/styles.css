@@ -479,13 +479,14 @@ body {
 .promo-slider-pagination-button {
   width: 12px;
   height: 12px;
-  border: none;
-  background: url("../images/decorative-images/pagination.svg") no-repeat;
-  background-size: 12px 12px;
+  border: 2px #000 solid;
+  border-radius: 50%;
+  padding: 0;
+
 }
 
 .promo-slider-pagination-button-current {
-  background: url("../images/decorative-images/pagination-active.svg") no-repeat;
+  background-color: #000;
 }
 /* Header-inner catalog */
 .inner-header {
