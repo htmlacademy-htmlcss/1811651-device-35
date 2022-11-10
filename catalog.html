@@ -79,6 +79,26 @@
                 <h3 class="catalog-form-title filter-title title-2">Фильтр:</h3>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title title-3">Стоимость</legend>
+                  <div class="range-slider">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 119px;">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                        <label class="range-filer-label range-min">
+                          от <input class="range-input" type="number" value="0" name="min-price">
+                          <span class="visually-hidden">Введите минимальную цену.</span>
+                        </label>
+                        <label class="range-filer-label range-max">
+                          до <input class="range-input" type="number" value="5000" name="max-price">
+                          <span class="visually-hidden">Введите максимальную цену.</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title title-3">Цвет</legend>

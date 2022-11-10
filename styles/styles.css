@@ -574,7 +574,102 @@ body {
 }
 
 .catalog-filter {
-  width: 320px;
+  width: 200px;
+  margin: 0 60px;
+}
+
+.range-slider {
+  position: relative;
+  margin-top: 23px;
+  margin-bottom: 38px;
+}
+
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #EBEBEB;
+  border: 2px #000 solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  opacity: 0.5;
+}
+
+.range-toggle:active {
+  background-color: #000;
+}
+
+.range-toggle:focus-visible {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -9px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -9px;
+}
+
+.range-filer-label {
+  font-family: inherit;
+  color: #bcbcbc;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.range-min,
+.range-max {
+  position: absolute;
+}
+
+.range-min {
+  top: 9px;
+  left: -13px;
+}
+
+.range-max {
+  top: 9px;
+  right: -35px;
+}
+
+.range-input {
+  width: 40px;
+  border: 0;
+  background-color: transparent;
+  font-family: inherit;
+  color: #bcbcbc;
+}
+
+.range-input[type="number"] {
+  font-family: inherit;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
 }
 
 .catalog-form-title{
