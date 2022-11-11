@@ -370,6 +370,35 @@ body {
   justify-content: space-between;
 }
 
+.subcatalog {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 120px;
+  flex-wrap: wrap;
+}
+
+.subcatalog-off {
+  display: none;
+}
+
+.catalog-item a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px 0;
+  margin-right: 60px;
+}
+
+
 .menu {
   margin: 0;
   padding: 0;
