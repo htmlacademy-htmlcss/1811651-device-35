@@ -578,6 +578,12 @@ body {
   margin: 0 60px;
 }
 
+.catalog-filter-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .catalog-filter-group {
   position: relative;
   padding: 0;
@@ -592,7 +598,11 @@ body {
   width: 100%;
   height: 2px;
   background-color: #000;
-  top: -35px;
+  top: -55px;
+}
+
+.catalog-filter-item {
+  margin-bottom: 17px;
 }
 
 .range-slider {
@@ -705,12 +715,76 @@ body {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.36px;
+  margin-bottom: 20px;
 }
 
 .control {
   font-size: 16px;
   line-height: 20px;
   color: #000;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+.control-mark::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background: url("../images/decorative-images/checkbox-on.svg") no-repeat center;
+  background-size: 10px 10px;
+  opacity: 0;
+}
+
+.control-mark.mark-radio {
+  border-radius: 50%;
+}
+
+.control-mark.mark-radio::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+
+.control-input:checked + .control-mark::before {
+  opacity: 1;
+}
+
+.control-input:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+.control-input:focus-visible + .control-mark {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.1;
+}
+
+.button-filter-show {
+  width: 220px;
+  font-size: 18px;
 }
 
 .select-control {
