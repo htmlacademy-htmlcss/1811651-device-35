@@ -694,6 +694,7 @@ body {
 /* Header-inner catalog */
 .inner-header {
   margin-bottom: 35px;
+  margin-left: 60px;
 }
 
 .inner-header-title {
