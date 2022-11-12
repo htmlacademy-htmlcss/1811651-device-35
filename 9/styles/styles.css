@@ -376,7 +376,7 @@ body {
 
 .popover {
   position: absolute;
-  display: none;
+  display: block;
   top: 40px;
   left: -150px;
   right: 0;
@@ -397,8 +397,8 @@ body {
   right: 0;
 }
 
-.popover-on {
-  display: block;
+.popover-off {
+  display: none;
 }
 
 .popover-card-list {
@@ -825,7 +825,7 @@ body {
 }
 
 .range-toggle:focus-visible {
-  outline: 2px solid #AF4FFF;;
+  outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
@@ -955,7 +955,7 @@ body {
 }
 
 .control-input:focus-visible + .control-mark {
-  outline: 2px solid #AF4FFF;;
+  outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
