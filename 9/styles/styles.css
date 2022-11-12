@@ -376,7 +376,7 @@ body {
 
 .popover {
   position: absolute;
-  display: block;
+  display: none;
   top: 40px;
   left: -150px;
   right: 0;
@@ -398,7 +398,7 @@ body {
 }
 
 .popover-off {
-  display: none;
+  display: block;
 }
 
 .popover-card-list {
