@@ -825,7 +825,7 @@ body {
 }
 
 .range-toggle:focus-visible {
-  outline: 2px solid #AF4FFF;;
+  outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
@@ -955,7 +955,7 @@ body {
 }
 
 .control-input:focus-visible + .control-mark {
-  outline: 2px solid #AF4FFF;;
+  outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
