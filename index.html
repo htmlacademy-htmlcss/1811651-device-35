@@ -358,5 +358,60 @@
       </div>
     </footer>
 
+    <div class="modal-container modal-off">
+      <div class="modal modal-order">
+        <button class="modal-close-button style-opacity">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h3 class="modal-title title-1">Доставка под заказ</h3>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-fieldset">
+              <legend class="visually-hidden">Имя и email</legend>
+              <div class="field-group">
+                <label class="modal-label" for="order-name">Ваше имя:</label>
+                <input class="modal-input input-name" type="text" placeholder="Введите имя" name="name" id="order-name" required>
+              </div>
+              <div class="field-group">
+                <label class="modal-label" for="order-email">Ваш e-mail:</label>
+                <input class="modal-input input-email" type="email" placeholder="Введите почту" value="почта" name="email" id="order-email" pattern="{@}" required>
+                <span class="modal-input-user-error">Забавный у вас адрес</span>
+              </div>
+            </fieldset>
+            <fieldset class="modal-fieldset">
+              <legend class="visually-hidden">Название товаров и их количество</legend>
+              <div class="field-group">
+                <label class="modal-label" for="bring-products">Что нужно привезти:</label>
+                <input class="modal-input input-products" placeholder="В свободной форме" name="products" id="bring-products" required>
+              </div>
+              <div class="field-group field-group-tool-tip">
+                <label class="modal-label label-tool-tip" tabindex="0">Количество:
+                  <button class="button-tool-tip" type="button"
+                  tabindex="-1" aria-labelledby="modal-tool-tip">
+                    <span class="visually-hidden">Уточнение</span>
+                  </button>
+                </label>
+                <span class="modal-tool-tip" id="modal-tool-tip">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </span>
+                <div class="modal-input-number-button-wrapper">
+                  <button class="modal-input-number-button input-decrease" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <label>
+                    <input class="modal-input modal-input-number" type="number" name="number" value="1" required>
+                  </label>
+                  <button class="modal-input-number-button input-add" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+            <button class="modal-button-submit button button-main">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
