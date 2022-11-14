@@ -30,6 +30,37 @@
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link navigation-link-basket style-opacity">Корзина</a>
+              <div class="popover">
+                <ul class="popover-card-list">
+                  <li class="popover-card-item">
+                    <a class="popover-card-link style-opacity" href="#">
+                    <img src="https://chemicalwitness.github.io/1811651-device-35/images/catalog/catalog-product-1-amateur-selfi-stick.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                    <span class="popover-card-item-title">Любительная селфи-палка</span>
+                    </a>
+                    <button class="popover-delete-item">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-card-item">
+                    <a class="popover-card-link style-opacity" href="#">
+                    <img src="https://chemicalwitness.github.io/1811651-device-35/images/catalog/catalog-product-2-proff-selfi-stick.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                    <span class="popover-card-item-title">Профессиональная селфи-палка</span>
+                  </a>
+                  <button class="popover-delete-item">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+                </ul>
+                <div class="card-info">
+                  <p class="popover-card-price-item">
+                    Товаров: <span class="popover-card-price-amount">2</span>
+                  </p>
+                  <p class="popover-card-price-item">
+                    Сумма: <span class="popover-card-price-currency">2000</span> ₽
+                  </p>
+                </div>
+                <button type="button" class=" button popover-open-card-button">Открыть корзину</button>
+              </div>
             </li>
           </ul>
         </nav> <!--/navigation-userlist-->
@@ -37,6 +68,14 @@
           <button class="catalog-toggle circle-plus title-2" type="button" value="Каталог товаров" name="catalog">
             Каталог товаров
           </button>
+          <ul class="subcatalog subcatalog-off">
+            <li class="catalog-item vr style-opacity"><a href="#">Виртуальная реальность</a></li>
+            <li class="catalog-item style-opacity"><a href="#">Моноподы для селфи</a></li>
+            <li class="catalog-item style-opacity"><a href="#">Экшн-камеры</a></li>
+            <li class="catalog-item style-opacity"><a href="#">Фитнес-браслеты</a></li>
+            <li class="catalog-item style-opacity"><a href="#">Умные часы</a><br></li>
+            <li class="catalog-item style-opacity"><a href="#">Квадрокоптеры</a></li>
+          </ul>
 
           <ul class="menu">
             <li class="menu-item">
@@ -111,31 +150,33 @@
                   </dl>
                 </div>
               </div>
-              <button class="promo-slider-button style-opacity" type="button">
-                <span class="visually-hidden">Предыдущий товар</span>
-              </button>
-              <button class="promo-slider-button promo-slider-next style-opacity" type="button">
-                <span class="visually-hidden">Следующий товар</span>
-              </button>
-            </div><!--/promo-slider-product-->
+              <div class="slider-controls">
+                <button class="promo-slider-button style-opacity" type="button">
+                  <span class="visually-hidden">Предыдущий товар</span>
+                </button>
+                <button class="promo-slider-button promo-slider-next style-opacity" type="button">
+                  <span class="visually-hidden">Следующий товар</span>
+                </button>
+              </div>
 
-            <ol class="promo-slider-pagination">
-              <li class="promo-slider-pagination-item">
-                <button class="promo-slider-pagination-button promo-slider-pagination-button-current style-opacity" type="button">
-                  <span class="visually-hidden">1 товар</span>
-                </button>
-              </li>
-              <li class="promo-slider-pagination-item">
-                <button class="promo-slider-pagination-button style-opacity" type="button">
-                  <span class="visually-hidden">2 товар</span>
-                </button>
-              </li>
-              <li class="promo-slider-pagination-item">
-                <button class="promo-slider-pagination-button style-opacity" type="button">
-                  <span class="visually-hidden">3 товар</span>
-                </button>
-              </li>
-            </ol> <!--/promo-slider-pagination-->
+              <ol class="promo-slider-pagination">
+                <li class="promo-slider-pagination-item">
+                  <button class="promo-slider-pagination-button promo-slider-pagination-button-current style-opacity" type="button">
+                    <span class="visually-hidden">1 товар</span>
+                  </button>
+                </li>
+                <li class="promo-slider-pagination-item">
+                  <button class="promo-slider-pagination-button style-opacity" type="button">
+                    <span class="visually-hidden">2 товар</span>
+                  </button>
+                </li>
+                <li class="promo-slider-pagination-item">
+                  <button class="promo-slider-pagination-button style-opacity" type="button">
+                    <span class="visually-hidden">3 товар</span>
+                  </button>
+                </li>
+              </ol> <!--/promo-slider-pagination-->
+            </div>
           </div>
         </section> <!--/promo-slider-->
 
@@ -314,6 +355,61 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container modal-off">
+      <div class="modal modal-order">
+        <button class="modal-close-button style-opacity">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h3 class="modal-title title-1">Доставка под заказ</h3>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-fieldset">
+              <legend class="visually-hidden">Имя и email</legend>
+              <div class="field-group">
+                <label class="modal-label" for="order-name">Ваше имя:</label>
+                <input class="modal-input input-name" type="text" placeholder="Введите имя" name="name" id="order-name" required>
+              </div>
+              <div class="field-group">
+                <label class="modal-label" for="order-email">Ваш e-mail:</label>
+                <input class="modal-input input-email" type="email" placeholder="Введите почту" value="почта" name="email" id="order-email" pattern="{@}" required>
+                <span class="modal-input-user-error">Забавный у вас адрес</span>
+              </div>
+            </fieldset>
+            <fieldset class="modal-fieldset">
+              <legend class="visually-hidden">Название товаров и их количество</legend>
+              <div class="field-group">
+                <label class="modal-label" for="bring-products">Что нужно привезти:</label>
+                <input class="modal-input input-products" placeholder="В свободной форме" name="products" id="bring-products" required>
+              </div>
+              <div class="field-group field-group-tool-tip">
+                <label class="modal-label label-tool-tip" tabindex="0">Количество:
+                  <button class="button-tool-tip" type="button"
+                  tabindex="-1" aria-labelledby="modal-tool-tip">
+                    <span class="visually-hidden">Уточнение</span>
+                  </button>
+                </label>
+                <span class="modal-tool-tip" id="modal-tool-tip">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </span>
+                <div class="modal-input-number-button-wrapper">
+                  <button class="modal-input-number-button input-decrease" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <label>
+                    <input class="modal-input modal-input-number" type="number" name="number" value="1" required>
+                  </label>
+                  <button class="modal-input-number-button input-add" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+            <button class="modal-button-submit button button-main">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>
