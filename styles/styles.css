@@ -485,7 +485,7 @@ body {
   background-color: #FFE17F;
 }
 
-.popover-open-card-button:active p{
+.popover-open-card-button:active {
   opacity: 0.3;
 }
 
