@@ -1398,6 +1398,7 @@ body {
   background-color: #f0f0f0;
   background-image: linear-gradient(180deg, #ffffff 100px, #f0f0f0 100px);
   margin-bottom: 70px;
+  min-width: 1160px;
 }
 
 .benefits-container {
@@ -1656,6 +1657,7 @@ body {
   /*Subscribe-index*/
 .subscribe {
   background-color: #f0f0f0;
+  min-width: 1160px;
 }
 
 .subscribe-container {
@@ -1742,6 +1744,7 @@ body {
 /*Footer*/
 .page-footer {
   background-color: #444;
+  min-width: 1160px;
 }
 
 .footer-container {
