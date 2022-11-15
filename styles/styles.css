@@ -2042,6 +2042,11 @@ body {
           appearance: none;
 }
 
+.modal-input-number[type='number'] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 .modal-input-number-button {
   width: 60px;
   height: 60px;
