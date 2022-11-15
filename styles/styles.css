@@ -1814,11 +1814,10 @@ body {
 }
 
 .footer-menu-link {
-  display: block;
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   padding: 0;
-
 }
 
 .footer-menu-link:hover {
