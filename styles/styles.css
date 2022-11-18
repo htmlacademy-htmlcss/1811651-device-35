@@ -378,6 +378,7 @@ body {
   position: relative;
 }
 
+
 .popover {
   position: absolute;
   display: none;
@@ -619,7 +620,8 @@ body {
 .slider-controls {
   position: absolute;
   margin: 0 15px;
-  top: 40%;
+  top: 220px;
+  left: 15px;
   transform: translateY(-40%);
   width: 530px;
   display: flex;
@@ -649,6 +651,8 @@ body {
 
 .promo-container {
   width: 560px;
+  position: relative;
+  z-index: 2;
 }
 
 .promo-image {
@@ -686,6 +690,18 @@ body {
 
 .promo-slider-next {
   transform: rotate(180deg);
+}
+
+.slide-number {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  color: #fff;
+  top: 60px;
+  right: 50px;
+  font-size: 180px;
+  font-weight: 700;
+  z-index: -1;
 }
 
 .promo-slider-pagination {
@@ -1091,6 +1107,10 @@ body {
   opacity: 0.6;
 }
 
+.product-card:active .product-card-container {
+  opacity: 0.3;
+}
+
 
 .products-cards-container{
   background-color: #fff;
@@ -1118,7 +1138,8 @@ body {
 .product-more-link .button-rectange {
   position: absolute;
   top: 16px;
-  left: -30px;
+  left: 50px;
+  right: 0;
   z-index: -1;
 }
 
@@ -1128,28 +1149,30 @@ body {
 
 .product-more-link {
   position: absolute;
+  width: 220px;
   top: 170px;
-  left: 100px;
+  left: 70px;
   z-index: -2;
+}
+
+.product-more-link:active {
+  background-color: #ffc700;
 }
 
 .button-rectange::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 220px;
   height: 8px;
   background-color: #FFE17F;
   top: 16px;
   left: 0;
+  right: 0;
   z-index: -1;
   overflow: hidden;
 }
 
 
-.product-more-link::after {
-  width: 220px;
-  left: -30px;
-}
 
 .product-new {
   position: absolute;
@@ -1169,7 +1192,7 @@ body {
 .button-load-more {
   width: 760px;
   display: block;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 44px auto;
   padding: 15px;
   border: 3px solid #E5E5E5;
   background-color: #fff;
@@ -1205,7 +1228,7 @@ body {
 }
 
 .pagination-item {
-  padding: 10px 17px;
+  padding: 10px 15px;
 }
 
 .pagination-item:first-of-type {
@@ -1916,7 +1939,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 40px;
+  padding: 70px 80px ;
   background-color: #fff;
   border: 10px #000 solid;
 }
@@ -1928,7 +1951,7 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
+  top: 80px;
   right: 70px;
   width: 26px;
   height: 26px;
