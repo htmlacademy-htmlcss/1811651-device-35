@@ -1924,7 +1924,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 40px;
+  padding: 70px 80px ;
   background-color: #fff;
   border: 10px #000 solid;
 }
@@ -1936,7 +1936,7 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
+  top: 80px;
   right: 70px;
   width: 26px;
   height: 26px;
