@@ -620,7 +620,8 @@ body {
 .slider-controls {
   position: absolute;
   margin: 0 15px;
-  top: 40%;
+  top: 220px;
+  left: 15px;
   transform: translateY(-40%);
   width: 530px;
   display: flex;
@@ -650,6 +651,8 @@ body {
 
 .promo-container {
   width: 560px;
+  position: relative;
+  z-index: 2;
 }
 
 .promo-image {
@@ -687,6 +690,18 @@ body {
 
 .promo-slider-next {
   transform: rotate(180deg);
+}
+
+.slide-number {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  color: #fff;
+  top: 60px;
+  right: 50px;
+  font-size: 180px;
+  font-weight: 700;
+  z-index: -1;
 }
 
 .promo-slider-pagination {
